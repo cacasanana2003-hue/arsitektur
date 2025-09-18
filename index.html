@@ -1,124 +1,139 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Belajar Komputer</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f2f5;
-      margin: 0;
-      padding: 20px;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 40px;
-      margin-bottom: 40px;
-      color: #333;
-    }
-
-    .card {
-      border-radius: 15px;
-      padding: 30px;
-      margin-bottom: 30px;
-      line-height: 1.8;
-      font-size: 20px;
-      color: #fff;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card h2 {
-      font-size: 28px;
-      margin-bottom: 15px;
-    }
-
-    .card ul {
-      margin-top: 10px;
-      padding-left: 20px;
-    }
-
-    .card ul li {
-      margin-bottom: 10px;
-    }
-
-    .highlight {
-      font-weight: bold;
-      text-decoration: underline;
-    }
-
-    .emoji {
-      font-size: 28px;
-      margin-right: 10px;
-    }
-
-    /* Warna berbeda tiap card */
-    .ram-card {
-      background-color: #4caf50; /* hijau */
-    }
-
-    .core-card {
-      background-color: #2196f3; /* biru */
-    }
-
-    .kesimpulan-card {
-      background-color: #ff9800; /* oranye */
-    }
-
-    hr {
-      border: 0;
-      border-top: 1px solid #ddd;
-      margin: 20px 0;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Belajar Arsitektur & Organisasi Komputer</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  .card {
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    font-size: 20px;
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .card h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .card ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  .card ul li {
+    margin-bottom: 10px;
+  }
+  .emoji {
+    font-size: 28px;
+    margin-right: 10px;
+  }
+  .highlight {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  /* Warna berbeda tiap card */
+  .arch-card { background-color: #4caf50; }       /* hijau */
+  .component-card { background-color: #ff9800; }  /* oranye */
+  .cycle-card { background-color: #9c27b0; }      /* ungu */
+  .model-card { background-color: #f44336; }      /* merah */
+  .history-card { background-color: #009688; }    /* teal */
+  .moore-card { background-color: #3f51b5; }      /* navy */
+  .case-card { background-color: #ff5722; }       /* deep orange */
+</style>
 </head>
 <body>
 
-  <h1>Belajar Komputer</h1>
+<h1>Belajar Arsitektur & Organisasi Komputer</h1>
 
-  <!-- Card 1: RAM -->
-  <div class="card ram-card">
-    <h2><span class="emoji">🧠</span> Kenapa Butuh RAM Besar?</h2>
-    <p>Bayangkan kamu sedang belajar:</p>
-    <ul>
-      <li>Meja belajar = RAM</li>
-      <li>Lemari buku = Hard disk/SSD</li>
-    </ul>
-    <p>Kalau mejanya kecil (RAM kecil), kamu cuma bisa taruh 1–2 buku. Kalau butuh buku lain, kamu harus bolak-balik ke lemari → lambat.</p>
-    <p>Kalau mejanya besar (RAM besar), kamu bisa taruh banyak buku sekaligus → belajar lebih cepat.</p>
-    <p>👉 Jadi, <span class="highlight">RAM besar = bisa buka banyak program/file bersamaan tanpa nge-lag.</span></p>
-  </div>
+<!-- Card 1: Arsitektur vs Organisasi -->
+<div class="card arch-card">
+  <h2>🏠 Arsitektur vs Organisasi</h2>
+  <p><strong>Arsitektur</strong> = tampilan luar → apa yang dilihat programmer (instruksi, mode pengalamatan).</p>
+  <p>👉 Analogi: desain rumah (tampak luar, denah).</p>
+  <p><strong>Organisasi</strong> = bagian dalam → implementasi teknis (register, ALU, bus).</p>
+  <p>👉 Analogi: bagaimana rumah itu dibangun (pipa, kabel listrik).</p>
+</div>
 
-  <!-- Card 2: Prosesor Core -->
-  <div class="card core-card">
-    <h2><span class="emoji">⚙️</span> Kenapa Prosesor Punya Banyak Core? Apa Itu Core?</h2>
-    <ul>
-      <li>Core = otak kecil di dalam prosesor.</li>
-      <li>Dulu, prosesor hanya punya 1 core (single-core). Semua kerjaan diproses satu per satu.</li>
-      <li>Sekarang prosesor bisa punya 2, 4, 8, bahkan puluhan core → artinya ada banyak otak yang bisa kerja paralel.</li>
-    </ul>
-    <p>📌 Analogi:</p>
-    <ul>
-      <li>Bayangkan ada 1 orang kuli bangunan (1 core) → semua pekerjaan harus dia kerjakan sendiri → lama.</li>
-      <li>Kalau ada 8 kuli (8 core) → bisa bagi tugas: ada yang aduk semen, ada yang angkut pasir, ada yang bikin pondasi. Pekerjaan selesai lebih cepat.</li>
-    </ul>
-    <p>👉 Jadi, semakin banyak core, komputer bisa multitasking dengan lancar (misalnya main game sambil streaming, sambil buka aplikasi lain).</p>
-  </div>
+<!-- Card 2: Komponen Utama -->
+<div class="card component-card">
+  <h2>🖥️ Komponen Utama Sistem Komputer</h2>
+  <ul>
+    <li><strong>CPU</strong> = otak → ALU (menghitung), CU (mengatur), Register (catatan kecil)</li>
+    <li><strong>RAM</strong> = meja kerja → data sementara</li>
+    <li><strong>I/O</strong> = mata, tangan, telinga → alat komunikasi dengan dunia luar</li>
+    <li><strong>Bus</strong> = jalan raya → jalur data antar komponen</li>
+  </ul>
+</div>
 
-  <!-- Card 3: Kesimpulan -->
-  <div class="card kesimpulan-card">
-    <h2><span class="emoji">✨</span> Kesimpulan</h2>
-    <ul>
-      <li>RAM besar = meja kerja luas → bisa taruh banyak “alat belajar” (aplikasi/data) sekaligus.</li>
-      <li>Core banyak = banyak pekerja otak → bisa ngerjain tugas secara paralel, lebih cepat dan efisien.</li>
-    </ul>
-  </div>
+<!-- Card 3: Siklus Instruksi -->
+<div class="card cycle-card">
+  <h2>🍳 Siklus Instruksi</h2>
+  <p>Mirip orang masak dengan resep:</p>
+  <ul>
+    <li>Fetch → ambil resep (instruksi)</li>
+    <li>Decode → pahami langkahnya</li>
+    <li>Execute → masak sesuai resep</li>
+    <li>Write back → sajikan hasilnya</li>
+  </ul>
+</div>
+
+<!-- Card 4: Model Arsitektur -->
+<div class="card model-card">
+  <h2>📦 Model Arsitektur</h2>
+  <ul>
+    <li>Von Neumann → data & instruksi dicampur (1 memori)</li>
+    <li>Harvard → data & instruksi dipisah (lebih cepat, tapi lebih kompleks)</li>
+  </ul>
+  <p>👉 Analogi: satu gudang campur bahan & resep vs gudang terpisah.</p>
+</div>
+
+<!-- Card 5: Sejarah Komputer -->
+<div class="card history-card">
+  <h2>📜 Sejarah Generasi Komputer</h2>
+  <ul>
+    <li>Gen I: Tabung vakum → besar, panas</li>
+    <li>Gen II: Transistor → lebih kecil</li>
+    <li>Gen III: IC → ribuan transistor</li>
+    <li>Gen IV: Mikroprosesor → semua dalam 1 chip</li>
+    <li>Gen V: Multicore, paralel</li>
+  </ul>
+  <p>👉 Hubungkan dengan smartphone → sekarang kecil tapi super kuat.</p>
+</div>
+
+<!-- Card 6: Moore's Law -->
+<div class="card moore-card">
+  <h2>⚡ Moore's Law</h2>
+  <p>Transistor bertambah 2x tiap 2 tahun → komputer makin cepat, murah.</p>
+  <p>👉 Tapi ada batas: panas, ukuran fisik.</p>
+</div>
+
+<!-- Card 7: Studi Kasus -->
+<div class="card case-card">
+  <h2>📱 Studi Kasus: Smartphone vs PC</h2>
+  <ul>
+    <li>Smartphone (ARM) → hemat daya, cocok baterai</li>
+    <li>PC (x86) → performa tinggi, tapi boros daya</li>
+  </ul>
+  <p>👉 Tanya mahasiswa: "Kenapa HP bisa awet baterai, tapi laptop cepat habis?"</p>
+</div>
 
 </body>
 </html>
