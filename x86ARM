@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arsitektur Komputer: x86 & ARM</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  .card {
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    font-size: 20px;
+    color: #000;
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+  }
+  .card h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .card ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  .card ul li {
+    margin-bottom: 10px;
+  }
+  .emoji {
+    font-size: 28px;
+    margin-right: 10px;
+  }
+  .highlight {
+    font-weight: bold;
+  }
+  /* Warna pastel sangat muda tiap card */
+  .x86-card { background-color: #d0f0c0; }     /* hijau pastel */
+  .arm-card { background-color: #c8d6ff; }     /* biru pastel */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  table, th, td {
+    border: 1px solid #aaa;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  th {
+    background-color: #eee;
+  }
+</style>
+</head>
+<body>
+
+<h1>Arsitektur Komputer: x86 & ARM</h1>
+
+<!-- Card 1: x86 -->
+<div class="card x86-card">
+  <h2>💻 Komputer x86</h2>
+  <ul>
+    <li><strong>Asal nama:</strong> dari prosesor Intel 8086 (seri 8086, 80186, 80286, 80386, 80486 → semua berakhiran "86")</li>
+    <li><strong>Ciri utama:</strong> 32-bit / 64-bit, digunakan di PC dan laptop</li>
+    <li><strong>Kelebihan:</strong> performa tinggi, cocok aplikasi berat</li>
+    <li><strong>Kekurangan:</strong> boros daya dibanding ARM</li>
+    <li><strong>Analogi:</strong> SUV besar → kencang & kuat, tapi konsumsi bensin lebih banyak</li>
+  </ul>
+</div>
+
+<!-- Card 2: ARM -->
+<div class="card arm-card">
+  <h2>📱 Komputer ARM</h2>
+  <ul>
+    <li><strong>Asal nama:</strong> ARM = Advanced RISC Machine (awal: Acorn RISC Machine)</li>
+    <li><strong>Ciri utama:</strong> RISC → instruksi sederhana, hemat daya; digunakan di smartphone, tablet, embedded system</li>
+    <li><strong>Kelebihan:</strong> hemat baterai, efisien</li>
+    <li><strong>Kekurangan:</strong> performa lebih rendah untuk aplikasi berat</li>
+    <li><strong>Analogi:</strong> mobil hybrid / city car → hemat energi, lincah, tapi tidak sekuat SUV untuk beban berat</li>
+  </ul>
+</div>
+
+<!-- Card 3: Tabel Perbandingan -->
+<div class="card x86-card">
+  <h2>📊 Perbandingan x86 & ARM</h2>
+  <table>
+    <tr>
+      <th>Arsitektur</th>
+      <th>Digunakan di</th>
+      <th>Kelebihan</th>
+      <th>Kekurangan</th>
+    </tr>
+    <tr>
+      <td>x86</td>
+      <td>PC / Laptop</td>
+      <td>Performa tinggi, aplikasi berat</td>
+      <td>Boros daya</td>
+    </tr>
+    <tr>
+      <td>ARM</td>
+      <td>Smartphone / Tablet</td>
+      <td>Hemat daya, efisien</td>
+      <td>Kurang optimal untuk aplikasi berat</td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>
