@@ -7,11 +7,11 @@
   <style>
     body {
       font-family: "Merriweather", serif;
-      background-color: #fdfdfc;
-      color: #333;
+      background-color: #fefefe;
+      color: #2c3e50;
       margin: 0;
       padding: 0;
-      line-height: 1.7;
+      line-height: 1.8;
     }
     .container {
       max-width: 1000px;
@@ -22,19 +22,20 @@
       display: flex;
       align-items: flex-start;
       gap: 30px;
-      border-bottom: 2px solid #ccc;
+      border-bottom: 3px solid #cfa43b;
       padding-bottom: 30px;
       margin-bottom: 30px;
     }
     .profile-header img {
-      width: 220px;
+      width: 240px;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+      border: 4px solid #cfa43b;
     }
     .profile-header h1 {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       margin: 0;
-      color: #2c3e50;
+      color: #0d1b3d;
     }
     .profile-header h2 {
       font-size: 1.2rem;
@@ -46,11 +47,12 @@
       margin-bottom: 30px;
     }
     section h3 {
-      font-size: 1.4rem;
-      border-left: 4px solid #2c3e50;
-      padding-left: 10px;
+      font-size: 1.5rem;
+      border-left: 6px solid #cfa43b;
+      padding-left: 12px;
       margin-bottom: 15px;
-      color: #2c3e50;
+      color: #0d1b3d;
+      font-weight: bold;
     }
     ul {
       margin: 0;
@@ -61,11 +63,18 @@
     }
     blockquote {
       font-style: italic;
-      font-size: 1.1rem;
-      border-left: 4px solid #999;
-      padding-left: 15px;
+      font-size: 1.2rem;
+      border-left: 6px solid #cfa43b;
+      padding-left: 18px;
       margin: 20px 0;
-      color: #444;
+      color: #0d1b3d;
+      background: #f9f7f2;
+      padding: 18px;
+      border-radius: 8px;
+    }
+    .highlight {
+      color: #cfa43b;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -75,8 +84,10 @@
       <img src="EDIII.jpg" alt="Foto Edi Langkara">
       <div>
         <h1>Drs. Edi Langkara, MH</h1>
-        <h2>Dikenal dengan sapaan <strong>Elang</strong></h2>
-        <p>Tokoh publik asal Halmahera Tengah, Maluku Utara. Pernah menjabat sebagai <strong>Bupati Halmahera Tengah (2017–2022)</strong>, kini beliau aktif sebagai penulis, pengamat sosial, dan pemerhati lingkungan. Dengan pengalaman panjang di pemerintahan dan organisasi, Edi Langkara menaruh perhatian besar pada isu <em>sosial, politik, pendidikan,</em> dan <em>keberlanjutan lingkungan</em>.</p>
+        <h2>Dikenal dengan sapaan <span class="highlight">Elang</span></h2>
+        <p>Tokoh publik asal <span class="highlight">Halmahera Tengah, Maluku Utara</span>. 
+        Pernah menjabat sebagai <strong>Bupati Halmahera Tengah (2017–2022)</strong>, kini beliau aktif sebagai <strong>penulis, pengamat sosial,</strong> dan <strong>pemerhati lingkungan</strong>. 
+        Dengan pengalaman panjang di pemerintahan dan organisasi, Edi Langkara menaruh perhatian besar pada isu <em>sosial, politik, pendidikan,</em> dan <em>keberlanjutan lingkungan</em>.</p>
       </div>
     </div>
 
@@ -93,11 +104,11 @@
     <section>
       <h3>Fokus & Perhatian</h3>
       <ul>
-        <li><strong>Pendidikan</strong> → Peningkatan infrastruktur sekolah dasar & akses pendidikan di daerah.</li>
-        <li><strong>Kesehatan</strong> → Pengembangan layanan kesehatan masyarakat di Halmahera Tengah.</li>
-        <li><strong>Sosial</strong> → Penyaluran bantuan sosial (bansos/sembako) bagi masyarakat terdampak inflasi & krisis.</li>
-        <li><strong>Lingkungan</strong> → Suara kritis terhadap tata kelola pertambangan, pembangunan berkelanjutan, & keberlanjutan ekosistem.</li>
-        <li><strong>Olahraga</strong> → Pembinaan sepak bola dan olahraga daerah melalui PSSI Maluku Utara.</li>
+        <li><span class="highlight">Pendidikan</span> → Peningkatan infrastruktur sekolah dasar & akses pendidikan di daerah.</li>
+        <li><span class="highlight">Kesehatan</span> → Pengembangan layanan kesehatan masyarakat di Halmahera Tengah.</li>
+        <li><span class="highlight">Sosial</span> → Penyaluran bantuan sosial (bansos/sembako) bagi masyarakat terdampak inflasi & krisis.</li>
+        <li><span class="highlight">Lingkungan</span> → Suara kritis terhadap tata kelola pertambangan, pembangunan berkelanjutan, & keberlanjutan ekosistem.</li>
+        <li><span class="highlight">Olahraga</span> → Pembinaan sepak bola dan olahraga daerah melalui PSSI Maluku Utara.</li>
       </ul>
     </section>
 
@@ -106,7 +117,7 @@
       <blockquote>
         “Sosial, politik, dan lingkungan adalah simpul kehidupan; tugas kita adalah menjaga simpul itu tetap kuat.”
       </blockquote>
-      <p>Kalimat ini menjadi salah satu refleksi dari pandangan Edi Langkara: menjaga keseimbangan antara pembangunan, keadilan sosial, dan kelestarian lingkungan.</p>
+      <p>Kalimat ini menjadi salah satu refleksi dari pandangan <strong>Edi Langkara</strong>: menjaga keseimbangan antara pembangunan, keadilan sosial, dan kelestarian lingkungan.</p>
     </section>
   </div>
 </body>
