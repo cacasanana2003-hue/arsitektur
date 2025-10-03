@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daftar Artikel - Catatan Elang</title>
+  <style>
+    :root{
+      --primary:#1a73e8;
+      --primary-dark:#0c58c0;
+      --muted:#f4f6f8;
+      --card:#ffffff;
+      --accent:#cfa43b;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      background:var(--muted);
+      color:#222;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    /* Header */
+    header{
+      background:linear-gradient(90deg,var(--primary),#3b82f6);
+      color:#fff;
+      padding:20px 16px;
+      text-align:center;
+    }
+    header h1{ margin:0; font-size:1.4rem; letter-spacing:0.2px; }
+    header p{ margin:8px 0 0; opacity:0.92; font-size:0.95rem; }
+
+    /* Top controls */
+    .top-actions{
+      display:flex;
+      gap:10px;
+      justify-content:center;
+      align-items:center;
+      margin-top:14px;
+      flex-wrap:wrap;
+    }
+    .btn{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      transition:all .18s ease;
+    }
+    .btn-primary{
+      background:var(--card);
+      color:var(--primary);
+      box-shadow:0 4px 14px rgba(15,81,165,0.12);
+    }
+    .btn-primary:hover{ transform:translateY(-3px); box-shadow:0 8px 24px rgba(15,81,165,0.14); }
+    .btn-main{
+      background:var(--accent);
+      color:#fff;
+    }
+    .btn-main:hover{ background:#a67a2c; transform:translateY(-2px); }
+
+    /* Container */
+    .container{
+      max-width:1100px;
+      margin:22px auto;
+      padding:0 16px;
+    }
+
+    /* Grid list */
+    .artikel-list{
+      display:grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+      gap:18px;
+      margin-top:20px;
+    }
+    .artikel-item{
+      background:var(--card);
+      border-radius:10px;
+      padding:16px;
+      box-shadow:0 6px 20px rgba(8,24,60,0.06);
+      display:flex;
+      flex-direction:column;
+      height:100%;
+    }
+    .artikel-item h3{ margin:0 0 8px; font-size:1.05rem; color:var(--primary); }
+    .artikel-item p{ margin:0 0 12px; color:#444; font-size:0.95rem; flex:1; }
+    .artikel-item .read{
+      margin-top:auto;
+      align-self:start;
+      padding:8px 12px;
+      border-radius:8px;
+      background:var(--primary);
+      color:#fff;
+      text-decoration:none;
+      font-weight:700;
+    }
+    .artikel-item .read:hover{ background:var(--primary-dark); }
+
+    .hint{
+      margin-top:18px;
+      text-align:center;
+      color:#666;
+      font-size:0.95rem;
+    }
+
+    footer{
+      margin:36px 0 0;
+      padding:24px 16px;
+      text-align:center;
+      color:#fff;
+      background:linear-gradient(90deg,#05204a,#003366);
+    }
+    /* responsive */
+    @media (max-width:560px){
+      header h1{ font-size:1.15rem; }
+      .artikel-item h3{ font-size:1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Daftar Artikel — Catatan Elang</h1>
+    <p>Kumpulan tulisan Elang Halmahera: opini, pemikiran, dan catatan sosial-politik</p>
+
+    <!-- Tombol kembali ke website utama (di header) -->
+    <div class="top-actions" style="margin-bottom:6px;">
+      <a class="btn btn-primary" href="index.html" title="Kembali ke Beranda Lokal">🏠 Beranda</a>
+      <a class="btn btn-main" href="https://catatanelang.berdu.pw/" target="_blank" rel="noopener">↪ Kembali ke Website Utama</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>
+        <h2 style="margin:0 0 6px">Artikel Terbaru</h2>
+        <p style="margin:0;color:#555">Klik judul untuk membaca lengkap.</p>
+      </div>
+
+      <!-- Tombol cepat menuju Website Utama (di kanan atas daftar) -->
+      <div style="margin-left:auto">
+        <a class="btn btn-main" href="https://catatanelang.berdu.pw/" target="_blank" rel="noopener">Kembali ke Website Utama</a>
+      </div>
+    </div>
+
+    <div class="artikel-list">
+
+      <!-- ========== Artikel 1 ========== -->
+      <div class="artikel-item">
+        <h3><a href="tulisan1.html" style="color:inherit; text-decoration:none;">Dilema Sosial Ekonomi Daerah</a></h3>
+        <p>Kebijakan penertiban kawasan hutan dan tambang liar serta dampaknya pada masyarakat kecil — analisis, implikasi sosial-ekonomi, dan saran kebijakan.</p>
+        <a class="read" href="tulisan1.html">Baca Selengkapnya</a>
+      </div>
+
+      <!-- ========== Contoh Artikel 2 (ganti atau hapus jika belum ada) ========== -->
+      <div class="artikel-item">
+        <h3><a href="tulisan2.html" style="color:inherit; text-decoration:none;">Judul Artikel Kedua (Contoh)</a></h3>
+        <p>Ringkasan singkat artikel kedua. Setelah Anda membuat file tulisan2.html, ganti link dan ringkasan ini.</p>
+        <a class="read" href="tulisan2.html">Baca Selengkapnya</a>
+      </div>
+
+      <!-- Tambah artikel baru dengan menyalin blok div.artikel-item di atas -->
+    </div>
+
+    <p class="hint">Cara tambah artikel: buat file baru (mis. <code>tulisan3.html</code>) di root, lalu salin satu blok <code>&lt;div class="artikel-item"&gt;…&lt;/div&gt;</code> ke sini dan ubah judul/teaser/link.</p>
+  </div>
+
+  <footer>
+    &copy; 2025 Catatan Elang — Kumpulan Tulisan & Opini
+  </footer>
+
+</body>
+</html>
