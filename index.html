@@ -30,7 +30,7 @@
       padding:28px;
     }
 
-    /* Header - two column responsive */
+    /* Header */
     .header{
       display:flex;
       gap:28px;
@@ -90,9 +90,14 @@
       border-radius:10px;
       box-shadow:0 8px 24px rgba(13,27,61,0.08);
       border:1px solid rgba(13,27,61,0.03);
+      cursor:pointer;
+      transition:transform 0.2s ease;
+    }
+    .timeline-wrap img:hover{
+      transform:scale(1.02);
     }
 
-    /* small caption */
+    /* Caption */
     .caption{ font-size:0.88rem; color:#6b7280; margin-top:8px; text-align:center; }
 
     /* CTA button */
@@ -111,15 +116,14 @@
     .cta-btn:hover{
       background:#a88328;
     }
-
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="card">
+      <!-- HEADER -->
       <div class="header">
         <div class="photo">
-          <!-- FOTO PROFIL di root directory -->
           <img src="EDIII.jpg" alt="Drs. Edi Langkara, MH">
         </div>
 
@@ -128,4 +132,40 @@
           <h2>dikenal dengan sapaan <strong style="color:var(--gold)">Elang</strong></h2>
           <p class="lead">
             Tokoh publik asal Halmahera Tengah, Maluku Utara. Pernah menjabat sebagai
-            <strong>Bupati Halmahera Tengah (2017–2022)</strong>, kini aktif sebaga
+            <strong>Bupati Halmahera Tengah (2017–2022)</strong>, kini aktif sebagai penulis,
+            pengamat sosial, dan pemerhati lingkungan. Fokus pada isu sosial, politik, pendidikan,
+            dan keberlanjutan lingkungan.
+          </p>
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="sections">
+        <!-- KIRI -->
+        <div>
+          <section class="panel">
+            <h3>Visi Pemikiran</h3>
+            <blockquote>
+              “Sosial, politik, dan lingkungan adalah simpul kehidupan; tugas kita adalah menjaga simpul itu tetap kuat.”
+            </blockquote>
+          </section>
+        </div>
+
+        <!-- KANAN -->
+        <aside>
+          <div class="panel">
+            <h3>Timeline Karier</h3>
+            <div class="timeline-wrap">
+              <a href="timeline-karier.png" target="_blank">
+                <img src="timeline-karier.png" alt="Timeline Karier Drs. Edi Langkara, MH">
+              </a>
+              <div class="caption">Klik gambar untuk melihat versi penuh.</div>
+              <a href="tulisan.html" class="cta-btn">Baca Tulisan</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
