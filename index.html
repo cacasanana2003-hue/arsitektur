@@ -10,7 +10,6 @@
       --gold:#cfa43b;
       --bg:#fbfbfa;
       --card:#ffffff;
-      --cta:#c97a2b; /* orange kecoklatan */
     }
     body{
       margin:0;
@@ -31,7 +30,7 @@
       padding:28px;
     }
 
-    /* Header */
+    /* Header - two column responsive */
     .header{
       display:flex;
       gap:28px;
@@ -50,7 +49,10 @@
     }
     .photo img{ display:block; width:100%; height:auto; }
 
-    .meta{ flex:1; min-width:260px; }
+    .meta{
+      flex:1;
+      min-width:260px;
+    }
     h1{ margin:6px 0 6px; font-size:2.1rem; line-height:1.05; color:var(--navy); }
     h2{ margin:0 0 14px; font-size:1rem; font-style:italic; color:#555; }
     p.lead{ margin-top:6px; color:#2f3a4a; }
@@ -71,8 +73,6 @@
       margin:0 0 12px; padding-left:12px; border-left:6px solid var(--gold);
       color:var(--navy); font-size:1.15rem;
     }
-    ul{ margin:0 0 8px 18px; color:#263044; }
-    li{ margin-bottom:8px; }
 
     blockquote{
       margin:18px 0; padding:14px 16px; background:#f5f6f7;
@@ -91,22 +91,27 @@
       box-shadow:0 8px 24px rgba(13,27,61,0.08);
       border:1px solid rgba(13,27,61,0.03);
     }
+
+    /* small caption */
     .caption{ font-size:0.88rem; color:#6b7280; margin-top:8px; text-align:center; }
 
-    /* CTA Button */
+    /* CTA button */
     .cta-btn{
       display:inline-block;
-      margin-top:18px;
-      padding:12px 28px;
-      background:var(--cta);
-      color:#fff;
-      font-size:1rem;
-      font-weight:600;
-      border-radius:8px;
+      margin-top:16px;
+      padding:12px 26px;
+      background:var(--gold);
+      color:white;
       text-decoration:none;
+      border-radius:8px;
+      font-weight:bold;
+      box-shadow:0 4px 14px rgba(0,0,0,0.15);
       transition:background 0.3s ease;
     }
-    .cta-btn:hover{ background:#a85f1f; }
+    .cta-btn:hover{
+      background:#a88328;
+    }
+
   </style>
 </head>
 <body>
@@ -114,6 +119,7 @@
     <div class="card">
       <div class="header">
         <div class="photo">
+          <!-- FOTO PROFIL di root directory -->
           <img src="EDIII.jpg" alt="Drs. Edi Langkara, MH">
         </div>
 
@@ -122,47 +128,4 @@
           <h2>dikenal dengan sapaan <strong style="color:var(--gold)">Elang</strong></h2>
           <p class="lead">
             Tokoh publik asal Halmahera Tengah, Maluku Utara. Pernah menjabat sebagai
-            <strong>Bupati Halmahera Tengah (2017–2022)</strong>, kini aktif sebagai penulis,
-            pengamat sosial, dan pemerhati lingkungan. Fokus pada isu sosial, politik, pendidikan,
-            dan keberlanjutan lingkungan.
-          </p>
-        </div>
-      </div>
-
-      <div class="sections">
-        <!-- kiri: konten utama -->
-        <div>
-          <section class="panel">
-            <h3>Fokus & Perhatian</h3>
-            <ul>
-              <li><strong>Pendidikan</strong> — peningkatan infrastruktur & akses.</li>
-              <li><strong>Kesehatan</strong> — penguatan layanan dasar.</li>
-              <li><strong>Sosial</strong> — program bantuan & perlindungan sosial.</li>
-              <li><strong>Lingkungan</strong> — tata kelola sumber daya & keberlanjutan.</li>
-              <li><strong>Olahraga</strong> — pembinaan sepak bola regional.</li>
-            </ul>
-          </section>
-
-          <section class="panel">
-            <h3>Visi Pemikiran</h3>
-            <blockquote>“Sosial, politik, dan lingkungan adalah simpul kehidupan; tugas kita adalah menjaga simpul itu tetap kuat.”</blockquote>
-          </section>
-        </div>
-
-        <!-- kanan: gambar timeline + CTA -->
-        <aside>
-          <div class="panel">
-            <h3>Timeline Karier</h3>
-            <div class="timeline-wrap">
-              <img src="career-timeline.png" alt="Timeline Karier Drs. Edi Langkara, MH">
-              <div class="caption">Infografis perjalanan karier.</div>
-              <!-- CTA Button -->
-              <a href="tulisan.html" class="cta-btn">Baca Tulisan</a>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </div>
-  </div>
-</body>
-</html>
+            <strong>Bupati Halmahera Tengah (2017–2022)</strong>, kini aktif sebaga
