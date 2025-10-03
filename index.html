@@ -1,138 +1,113 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arsitektur & Organisasi Komputer</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 20px;
-  }
-  h1 {
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 40px;
-    color: #333;
-  }
-  .card {
-    border-radius: 15px;
-    padding: 30px;
-    margin-bottom: 30px;
-    line-height: 1.8;
-    font-size: 20px;
-    color: #000;
-    transition: transform 0.3s;
-  }
-  .card:hover {
-    transform: translateY(-3px);
-  }
-  .card h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-  }
-  .card ul {
-    margin-top: 10px;
-    padding-left: 20px;
-  }
-  .card ul li {
-    margin-bottom: 10px;
-  }
-  .emoji {
-    font-size: 28px;
-    margin-right: 10px;
-  }
-  .highlight {
-    font-weight: bold;
-  }
-  /* Warna pastel sangat muda tiap card */
-  .arch-card { background-color: #d0f0c0; }       /* hijau pastel */
-  .component-card { background-color: #ffe4b5; }  /* oranye pastel */
-  .cycle-card { background-color: #e0bbff; }      /* ungu pastel */
-  .model-card { background-color: #ffb6b9; }      /* merah pastel */
-  .history-card { background-color: #b2f0f0; }    /* biru muda pastel */
-  .moore-card { background-color: #c8d6ff; }      /* biru pastel */
-  .case-card { background-color: #ffd8b1; }       /* peach pastel */
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Edi Langkara</title>
+  <style>
+    body {
+      font-family: "Merriweather", serif;
+      background-color: #fdfdfc;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .profile-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+    }
+    .profile-header img {
+      width: 220px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .profile-header h1 {
+      font-size: 2.2rem;
+      margin: 0;
+      color: #2c3e50;
+    }
+    .profile-header h2 {
+      font-size: 1.2rem;
+      font-style: italic;
+      margin-top: 8px;
+      color: #555;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    section h3 {
+      font-size: 1.4rem;
+      border-left: 4px solid #2c3e50;
+      padding-left: 10px;
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    blockquote {
+      font-style: italic;
+      font-size: 1.1rem;
+      border-left: 4px solid #999;
+      padding-left: 15px;
+      margin: 20px 0;
+      color: #444;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <div class="profile-header">
+      <img src="EDIII.jpg" alt="Foto Edi Langkara">
+      <div>
+        <h1>Drs. Edi Langkara, MH</h1>
+        <h2>Dikenal dengan sapaan <strong>Elang</strong></h2>
+        <p>Tokoh publik asal Halmahera Tengah, Maluku Utara. Pernah menjabat sebagai <strong>Bupati Halmahera Tengah (2017–2022)</strong>, kini beliau aktif sebagai penulis, pengamat sosial, dan pemerhati lingkungan. Dengan pengalaman panjang di pemerintahan dan organisasi, Edi Langkara menaruh perhatian besar pada isu <em>sosial, politik, pendidikan,</em> dan <em>keberlanjutan lingkungan</em>.</p>
+      </div>
+    </div>
 
-<h1>Arsitektur & Organisasi Komputer</h1>
+    <section>
+      <h3>Karier & Jabatan</h3>
+      <ul>
+        <li>Bupati Halmahera Tengah (2017–2022)</li>
+        <li>Ketua Asprov PSSI Maluku Utara (terpilih aklamasi)</li>
+        <li>Pernah menjabat di struktur DPP Partai Golkar</li>
+        <li>Pernah mencalonkan diri di Pilkada Halmahera Tengah & terlibat dalam wacana Pilgub Maluku Utara</li>
+      </ul>
+    </section>
 
-<!-- Card 1: Arsitektur vs Organisasi -->
-<div class="card arch-card">
-  <h2>🏠 Arsitektur vs Organisasi</h2>
-  <p><strong>Arsitektur</strong> = tampilan luar → apa yang dilihat programmer (instruksi, mode pengalamatan).</p>
-  <p>👉 Analogi: desain rumah (tampak luar, denah).</p>
-  <p><strong>Organisasi</strong> = bagian dalam → implementasi teknis (register, ALU, bus).</p>
-  <p>👉 Analogi: bagaimana rumah itu dibangun (pipa, kabel listrik).</p>
-</div>
+    <section>
+      <h3>Fokus & Perhatian</h3>
+      <ul>
+        <li><strong>Pendidikan</strong> → Peningkatan infrastruktur sekolah dasar & akses pendidikan di daerah.</li>
+        <li><strong>Kesehatan</strong> → Pengembangan layanan kesehatan masyarakat di Halmahera Tengah.</li>
+        <li><strong>Sosial</strong> → Penyaluran bantuan sosial (bansos/sembako) bagi masyarakat terdampak inflasi & krisis.</li>
+        <li><strong>Lingkungan</strong> → Suara kritis terhadap tata kelola pertambangan, pembangunan berkelanjutan, & keberlanjutan ekosistem.</li>
+        <li><strong>Olahraga</strong> → Pembinaan sepak bola dan olahraga daerah melalui PSSI Maluku Utara.</li>
+      </ul>
+    </section>
 
-<!-- Card 2: Komponen Utama -->
-<div class="card component-card">
-  <h2>🖥️ Komponen Utama Sistem Komputer</h2>
-  <ul>
-    <li><strong>CPU</strong> = otak → ALU (menghitung), CU (mengatur), Register (catatan kecil)</li>
-    <li><strong>RAM</strong> = meja kerja → data sementara</li>
-    <li><strong>I/O</strong> = mata, tangan, telinga → alat komunikasi dengan dunia luar</li>
-    <li><strong>Bus</strong> = jalan raya → jalur data antar komponen</li>
-  </ul>
-</div>
-
-<!-- Card 3: Siklus Instruksi -->
-<div class="card cycle-card">
-  <h2>🍳 Siklus Instruksi</h2>
-  <p>Mirip orang masak dengan resep:</p>
-  <ul>
-    <li>Fetch → ambil resep (instruksi)</li>
-    <li>Decode → pahami langkahnya</li>
-    <li>Execute → masak sesuai resep</li>
-    <li>Write back → sajikan hasilnya</li>
-  </ul>
-</div>
-
-<!-- Card 4: Model Arsitektur -->
-<div class="card model-card">
-  <h2>📦 Model Arsitektur</h2>
-  <ul>
-    <li>Von Neumann → data & instruksi dicampur (1 memori)</li>
-    <li>Harvard → data & instruksi dipisah (lebih cepat, tapi lebih kompleks)</li>
-  </ul>
-  <p>👉 Analogi: satu gudang campur bahan & resep vs gudang terpisah.</p>
-</div>
-
-<!-- Card 5: Sejarah Komputer -->
-<div class="card history-card">
-  <h2>📜 Sejarah Generasi Komputer</h2>
-  <ul>
-    <li>Gen I: Tabung vakum → besar, panas</li>
-    <li>Gen II: Transistor → lebih kecil</li>
-    <li>Gen III: IC → ribuan transistor</li>
-    <li>Gen IV: Mikroprosesor → semua dalam 1 chip</li>
-    <li>Gen V: Multicore, paralel</li>
-  </ul>
-  <p>👉 Hubungkan dengan smartphone → sekarang kecil tapi super kuat.</p>
-</div>
-
-<!-- Card 6: Moore's Law -->
-<div class="card moore-card">
-  <h2>⚡ Moore's Law</h2>
-  <p>Transistor bertambah 2x tiap 2 tahun → komputer makin cepat, murah.</p>
-  <p>👉 Tapi ada batas: panas, ukuran fisik.</p>
-</div>
-
-<!-- Card 7: Studi Kasus -->
-<div class="card case-card">
-  <h2>📱 Studi Kasus: Smartphone vs PC</h2>
-  <ul>
-    <li>Smartphone (ARM) → hemat daya, cocok baterai</li>
-    <li>PC (x86) → performa tinggi, tapi boros daya</li>
-  </ul>
-</div>
-
+    <section>
+      <h3>Visi Pemikiran</h3>
+      <blockquote>
+        “Sosial, politik, dan lingkungan adalah simpul kehidupan; tugas kita adalah menjaga simpul itu tetap kuat.”
+      </blockquote>
+      <p>Kalimat ini menjadi salah satu refleksi dari pandangan Edi Langkara: menjaga keseimbangan antara pembangunan, keadilan sosial, dan kelestarian lingkungan.</p>
+    </section>
+  </div>
 </body>
 </html>
-
-
